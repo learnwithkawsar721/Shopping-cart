@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- =====================Bootstrap Css ======================= -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- =====================FontAwesome Css ======================= -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+    <!-- =====================Style Css ======================= -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <main class="container">
+        <section class="shopping-cart mt-5">
+            <h1 class="section-title">My Shopping Cart</h1>
+            <div class="cart mt-5">
+                <div class="cart-item mt-3 shadow-sm rounded-3">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="d-flex align-items-center ">
+                                <img src="./assets/img/product-1.png" class="w-25" alt="">
+                                <h5 class="">iPhone 11 128GB Black</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 d-flex align-items-center justify-content-around">
+                            <div class="quantity">
+                                <button id="phone-minus"><i class="fas fa-minus"></i></button>
+                                <input id="phone-quantity" class="quantity-input" type="number" value="1">
+                                <button id="phone-plus"><i class="fas fa-plus"></i></button>
+                            </div>
+                            <div class="total-price">
+                                <h4>$<span id="phone-pric">1219</span></h4>
+                            </div>
+                            <div class="remove">
+                                <i class="fas fa-trash"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item mt-3 shadow-sm rounded-3">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="d-flex align-items-center ">
+                                <img src="./assets/img/product-2.png" class="w-25" alt="">
+                                <h5 class="">iPhone 11 Silicone Case - Black</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 d-flex align-items-center justify-content-around">
+                            <div class="quantity">
+                                <button id="case-minus"><i class="fas fa-minus"></i></button>
+                                <input id="case-quantity" class="quantity-input" type="number" value="1">
+                                <button id="case-plus"><i class="fas fa-plus"></i></button>
+                            </div>
+                            <div class="total-price">
+                                <h4>$<span id="case-pric">59</span></h4>
+                            </div>
+                            <div class="remove">
+                                <i class="fas fa-trash"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item mt-3 shadow-sm rounded-3">
+                    <div class="row">
+                        <div class="col-lg-7 p-4">
+                            <h5>SubTotal</h5>
+                            <h5>Tax</h5>
+                            <h5>Total</h5>
+
+                        </div>
+                        <div class="col-lg-5 text-end ">
+                            <h5>$<span id="subTotal">1219</span></h5>
+                            <h5>$<span id="tax">147.5</span></h5>
+                            <h5>$<span id="total">1320</span></h5>
+                        </div>
+                        <div class="col-md-12 pt-4 pb-4 text-end">
+                            <button type="button" class="btn btn-success check-out">Check Out</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <!-- ======================= Bootstrap Js ====================== -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- ======================= Custom Js ====================== -->
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

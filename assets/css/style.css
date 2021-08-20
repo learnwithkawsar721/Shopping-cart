@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.quantity-input {
+  text-align: center;
+  width: 60px;
+  border-style: none;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 5px;
+}
+.quantity-input:focus {
+  outline: none;
+}
+
+.quantity button {
+  height: 32px;
+  width: 32px;
+  border-style: none;
+  background: transparent;
+}
